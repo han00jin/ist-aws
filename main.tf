@@ -5,27 +5,22 @@ provider "aws" {
 }
 
 
-data "aws_ami" "ubuntu" {
-  most_recent = true
-
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
-  }
-
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-
-  owners = ["107657609878"] # Canonical
+resource "aws_instance" "InnovationDay01" {
+  ami           = "ami-2757f631"
+  instance_type = "t2.micro"
 }
 
-resource "aws_instance" "web" {
-  ami           = data.aws_ami.ubuntu.id
+resource "aws_instance" "InnovationDay02" {
+  ami           = "ami-2757f631"
   instance_type = "t2.micro"
+}
 
-  tags = {
-    Name = "InnovationDay01"
-  }
+resource "aws_instance" "InnovationDay03" {
+  ami           = "ami-2757f631"
+  instance_type = "t2.micro"
+}
+
+resource "aws_instance" "InnovationDay04" {
+  ami           = "ami-2757f631"
+  instance_type = "t2.micro"
 }
