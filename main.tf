@@ -12,7 +12,7 @@ resource "aws_instance" "Innovation_Day01" {
   }
 }
 
-resource "aws_instance" "Innovation_Day01" {
+resource "aws_instance" "Innovation_Day02" {
   ami = var.ami_var
   instance_type = var.instance_type_var
   tags = {
