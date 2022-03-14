@@ -4,7 +4,7 @@ provider "aws" {
  secret_key = var.secret_key_var
 }
 
-resource "aws_instance" "helloworld" {
+resource "aws_instance" "Innovation_Day01" {
   ami = var.ami_var
   instance_type = var.instance_type_var
   tags = {
