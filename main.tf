@@ -1,26 +1,26 @@
 provider "aws" {
- region = "us-east-2"
+ region = "us-east-1"
  access_key = var.access_key_var
  secret_key = var.secret_key_var
 }
 
 
 resource "aws_instance" "InnovationDay01" {
-  ami           = "ami-0b0ea68c435eb488d"
+  ami           = "ami-01b20f5ea962e3fe7"
   instance_type = "t2.micro"
 }
 
 resource "aws_instance" "InnovationDay02" {
-  ami           = "ami-0b0ea68c435eb488d"
+  ami           = "ami-01b20f5ea962e3fe7"
   instance_type = "t2.micro"
 }
 
 resource "aws_instance" "InnovationDay03" {
-  ami           = "ami-0b0ea68c435eb488d"
+  ami           = "ami-01b20f5ea962e3fe7"
   instance_type = "t2.micro"
 }
 
 resource "aws_instance" "InnovationDay04" {
-  ami           = "ami-0b0ea68c435eb488d"
+  ami           = "ami-01b20f5ea962e3fe7"
   instance_type = "t2.micro"
 }
