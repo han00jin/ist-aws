@@ -6,21 +6,21 @@ provider "aws" {
 
 
 resource "aws_instance" "InnovationDay01" {
-  ami           = "ami-2757f631"
+  ami           = "ami-0b0ea68c435eb488d"
   instance_type = "t2.micro"
 }
 
 resource "aws_instance" "InnovationDay02" {
-  ami           = "ami-2757f631"
+  ami           = "ami-0b0ea68c435eb488d"
   instance_type = "t2.micro"
 }
 
 resource "aws_instance" "InnovationDay03" {
-  ami           = "ami-2757f631"
+  ami           = "ami-0b0ea68c435eb488d"
   instance_type = "t2.micro"
 }
 
 resource "aws_instance" "InnovationDay04" {
-  ami           = "ami-2757f631"
+  ami           = "ami-0b0ea68c435eb488d"
   instance_type = "t2.micro"
 }
