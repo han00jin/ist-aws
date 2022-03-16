@@ -6,7 +6,7 @@ provider "aws" {
 
 
 resource "aws_instance" "InnovationDay01" {
-  ami           = "ami-01b20f5ea962e3fe7"
+  ami           = "ami-0e472ba40eb589f49"
   instance_type = "t3.small"
   key_name = "hanjpark"
      tags = {
@@ -15,7 +15,7 @@ resource "aws_instance" "InnovationDay01" {
 }
 
 resource "aws_instance" "InnovationDay02" {
-  ami           = "ami-01b20f5ea962e3fe7"
+  ami           = "ami-0e472ba40eb589f49"
   instance_type = "t3.small"
   key_name = "hanjpark"
      tags = {
