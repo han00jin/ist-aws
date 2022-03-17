@@ -23,4 +23,11 @@ resource "aws_instance" "InnovationDay02" {
     }
 }
 
-
+resource "aws_instance" "InnovationDay03" {
+  ami           = "ami-0e472ba40eb589f49"
+  instance_type = "t3.small"
+  key_name = "hanjpark"
+     tags = {
+        Name = "InnovationDay02"
+    }
+}
