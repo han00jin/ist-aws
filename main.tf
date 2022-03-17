@@ -28,6 +28,6 @@ resource "aws_instance" "InnovationDay03" {
   instance_type = "t3.small"
   key_name = "hanjpark"
      tags = {
-        Name = "InnovationDay02"
+        Name = "InnovationDay03"
     }
 }
